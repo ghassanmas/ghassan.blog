@@ -1,0 +1,7 @@
+_site/
+node_modules/
+.DS_Sotre
+.DS_Store
+.firebase
+_not-yet
+

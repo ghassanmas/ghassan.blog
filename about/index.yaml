@@ -1,0 +1,180 @@
+sections:
+  - name: Experience
+    items:
+      - name: Open Source Contributor @ Open edX and more
+        start_date: 2021-08
+        end_date: Present
+        link: https://github.com/ghassanmas
+        details: |
+          I am a core contributor for the Open edX project, by contribution on varies aspects of the platform,
+          from resolving bugs, to suggesting core architecture decision, and customizing or extending the platform.
+          I am motivated to contribute for believes of the open source initiatives in general as well 
+          as well for believing in a world where education is freely accessible for the general public.
+        summary:
+          - name: Bug Fixing
+            description: fixed varied amount of bugs
+            link: https://github.com/pulls?q=is%3Apr+author%3Aghassanmas+org%3Aopenedx+
+            techs: [Python, Django, React, MySQL, NodeJS]
+          - name: i18n of documentation
+            description: Made discovery work, of architecture of the documentation.
+            link: https://github.com/openedx/edx-documentation/pull/1991
+            techs: [CI-CD, Github-Actions, bash, Transfiex, Sphinx]
+          - name: Contribution to Tutor
+            description: Tutor is the official supported tool for DevOps of the Open edX platform
+            link: https://github.com/pulls?q=is%3Apr+author%3Aghassanmas+org%3Aoverhangio
+            techs: [Docker/Docker-Compose, AWS, DevOps, bash]
+      - name: Freelancing @ Zaat.dev
+        start_date: 2020-03
+        end_date: Present
+        link: https://zaat.dev
+        details: |
+          I started Zaatdev, as an agency to build that specialized in building high quality web apps.
+          I take on project and deliver them in a timely manner, and I do build the project either solo (by myself),
+          or with a team depending on the scope of the projects, to learn about what I did.
+        summary:
+          - name: (E-Learning) Madrasafree.com
+            link: https://Madrasafree.com
+            description: Upgraded an Open edX server with ~100K users 4 versions as well doing customization and extending of the platform.
+            techs: [AWS, DevOps, Django, MySQL, MongoDB ,React, Docker/Docker-compose]
+          - name: (E-commerce) Masgaz.com
+            description: A blazing fast SEO website, that supports multi-lanagues, content is pulled from DB, and pages will created accordingly, once the site is rebuilt
+            link: https://masgaz.com
+            techs: [Gatsby, React, NodeJS ,GraphQL, PostgreSQL]
+          - name: (E-Learning) Madrasafree.com
+            link: https://Madrasafree.com
+            description: Upgraded an Open edX server with ~100K users 4 versions as well doing customization and extending of the platform.
+            techs: [AWS, DevOps, Django, MySQL, MongoDB ,React, Docker/Docker-compose]
+      - name: Fullstack Developer @ Gazaskygeeks/FAC
+        start_date: 2017-05
+        end_date: 2020-01
+        details: |
+          My day to day activity involved building and facilitating the development of web apps as an MVP. Using technology
+          like NodeJS, React, PostgreSQL and others, while applying agile/sprint methodology.
+        summary:
+          - name: Semi Hosting Platform
+            link: http://gsgapp.io
+            description: Setup a server as a platform for student to showcase their project.
+            techs: [Nginx, DevOps, NodeJS ,React, Docker/Docker-compose, AWS/EC-2]
+          - name: Web apps as MVP
+            link: https://github.com/fack2
+            description: Facilitating the development of web apps, by reviewing the system architecture, doing code review, suggesting solutions...etc.
+            techs: [NodeJS ,React, Heroku, AWS/EC-2]
+
+  - name: Creating Content @ The Web
+    items:
+      - name: Blog Writing
+        link: https://github.com/ghassanmas
+        details: |
+          Writing blog about technical details
+        summary:
+          - name: DevOps at Zaat.dev
+            description: fixed varied amount of bugs
+            link: https://Zaat.to/DevOps
+            techs: [DevOps, nginx, AWS, NodeJS]
+          - name: Machine Learning
+            description: I wrote an article to explain the difference between
+            link: https://Zaat.to/Ml
+            techs: [Machine Learning, Deep Learning, Transfer Learning]
+          - name: Ghassan.blog
+            description: On this site I am going
+            link: https://ghassan.blog
+            techs: [11ty, nodejs, opensource, NodeJS]
+      - name: Podcast
+        link: Zaat.dev/podcast
+        details: |
+          Podcast about software engineering, so far I had one episode,
+          Feel free to reach out to me if you a topic would like us to talk 
+          about. Thank you!.
+        summary:
+          - name: Data Compliance
+            description: An open discussion with Tittay a US lawyer specialized in Data Compliance.
+            link: https://zaat.dev/podcast/episode01-data-compliance
+            techs: [Data Compliance, Privacy]
+      - name: Online Session
+        link: Thankyouforattending.com
+        details: |
+          Online sessions about technical topics
+        summary:
+          - name: DevOps at Zaat.dev
+            description: Aata Compliance and privacy laws in the US
+            link: https://Zaat.to/DevOps
+            techs: [DevOps, nginx, AWS, NodeJS]
+          - name: Machine Learning
+            description: I wrote an article to explain the difference between
+            link: https://Zaat.to/Ml
+            techs: [machine learning, data analytics]
+
+  - name: Education and Certificates
+    items:
+      - name: AWS Cloud Computing
+        start_date: 2021-02
+        details: |
+          I am certified as cloud participator earned through going AWS official assessment, also
+          I am recognized as a business partner.
+        summary:
+          - name: AWS Cloud Practitioner
+            start_date: 2021-02
+            description: Official Certification from AWS
+            link: https://www.credly.com/badges/38ee811c-0a06-47d8-b946-533c315a85b3
+            techs: [AWS, DevOps, Cloud Computing, Linux, Security, Networking]
+          - name: AWS Business Partner
+            description: Partner with AWS
+            link: https://www.credly.com/badges/38ee811c-0a06-47d8-b946-533c315a85b3
+      - name: Google Data Analytics
+        start_date: 2021-10
+        details: |
+          I have 5 courses by Google on Coursera platform, about Data Analytics. These courses 
+          were focused on analyzing for business, how to take insight and transform it to business goal i.e KPI.
+        link:
+        summary:
+          - name: Foundations Data, Data, Everywhere
+            description: Define and explain key concepts involved in data analytics including data, data analysis, and data ecosystem
+            link: https://www.coursera.org/account/accomplishments/verify/72KT25A6MK8U
+            start_date: 2021-03
+            techs: [SQL, Data Collection, Metadata, Spreadsheet]
+          - name: Ask Questions to Make Data-Driven Decisions
+            description: Explain how each step of the problem-solving road map contributes to common analysis scenarios.
+            link: https://coursera.org/share/bf590bda0d2f37be615f1d03348c5cb9
+            start_date: 2021-03
+            techs: [SQL, Data Collection, Metadata, Spreadsheet]
+          - name: Prepare Data for Exploration
+            description: ExplExplain factors to consider when making decisions about data collection
+            link: https://coursera.org/share/f00d5085d9df4ad472e1e5c7918a1428
+            start_date: 2021-03
+            techs: [SQL, Data Collection, Metadata, Spreadsheet]
+      - name: Machine Learning @ deeplearning.ai
+        start_date: 2017-01
+        details: |
+          I have taken multiple online courses on the topic of machine learning, mainly in image processing, natural langage processing.
+          Machine Learning has and still is a topic of very high intrest for me. Most of the courses I took here, are taught by Andrew NG.
+        link:
+        summary:
+          - name: Machine Learning
+            description: This was first online course I took about machine learning, its may be one of the most popular courses online for people who want to step in the field, it taught by Andrew ng, an AI professor @ Standford.
+            link: https://www.coursera.org/learn/machine-learning
+            start_date: 2016-15
+            techs: [Matlab, Machine Learning, Neural Network, Convolutional Neural Network ,Deep Learning]
+          - name: Neural Networks and Deep Learning
+            description: An intro course into neural networks and deep learning.
+            link: https://coursera.org/share/f9042ca8eb59a674bbdb8d3381431181
+            start_date: 2017-08
+            techs: [Deep Learning, Artificial Neural Network, Backpropagation, Python, Neural Network Architecture]
+          - name: Structuring Machine Learning Projects
+            description: This course is about approaching a machine learning from project, from a software engineering perspective.
+            link: https://coursera.org/share/9fe7123ef6e03ae69cc14dbf39ec3b0d
+            start_date: 2017-09
+            techs: [Tensflow, Machine Learning, Decision-Making, Deep Learning ]
+          - name: Improving Deep Neural Networks Hyperparameter Tuning, Regularization and Optimization
+            description: This course is about how to make machine learning model more efficient. By systematically applying/trying different settings until getting the best result, aka global optima.
+            link: https://coursera.org/share/fcb66e90ac4fa2064940ee1b3930cba3
+            start_date: 2017-09
+            techs: [Tensflow, Keras, Hyperparameter Tuning, Deep Learning ]
+          - name: Convolutional Neural Networks
+            description: This course focused on the field of image recognition, which is a sub field of machine learning. It involved training model from scratch, as well as using tranfer learning on image datasets.
+            link: https://coursera.org/share/094a47c9bfade62691e3bc80b72dde76
+            start_date: 2017-12
+            techs: [Tensflow, Keras, Facial Recognition System, Object Detection and Segmentation, Convolutional Neural Network
+,Deep Learning]
+
+
+

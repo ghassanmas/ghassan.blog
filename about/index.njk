@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+title: About Me
+eleventyNavigation:
+  key: About Me/ Resume
+  order: 3
+---
+
+{% for section in sections %}
+  <section class="section">
+    <h2 class="section_title">
+      {{ section.name }}<h2>
+        <ol class="list">
+          {% for item in section.items %}
+            <li class="list_item">
+              <article class="article">
+                <div class="entry_header">
+                  <h3 class="entry_title">
+                    {{ item.name }}
+                  </h3>
+                  <div class="date">
+                    {% include "dates.njk" %}
+                  </div>
+                </div>
+                <p class="entry_detail">
+                  {{ item.details }}
+                </p>
+                <div class="entry_detail entry_summary">
+                  {% include "details.njk" %}
+                </div>
+              </article>
+            </li>
+          {% endfor %}
+        </ol>
+      </section>
+    {% endfor %}
+    {% include "contact.njk" %}
+
+<script src="/js/about.js" type="application/javascript"></script>

@@ -1,0 +1,25 @@
+<details id="details_{{ loop.index }}">
+  <summary class="summary">Samples</summary>
+  <ol class="list">
+    {% for item in item.summary %}
+      <li class="list_item summary_item">
+        <div class="con_sum_head">
+          <h4 class="summary_item_header">
+            {{ item.name }}
+          </h4>
+          <a class="link_external" target="_blank" href="{{ item.link }}">
+            <img src="/img/icons8-external-link.svg" alt="{{ item.name }}">  </a>
+          </div>
+          <p class="sum_techs">
+            <span class="bold">What</span>: {{ item.description }}
+          </p>
+          <p class="sum_techs">
+            <span class="bold">Used</span>:
+            {% for tech in item.techs %}
+              {{ tech }}{% if not loop.last %}, {% endif %}
+            {% endfor %}
+          </p>
+        </li>
+      {% endfor %}
+    </ol>
+  </details>

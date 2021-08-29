@@ -1,0 +1,11 @@
+{% if item.start_date %}
+ <time class="postlist-date" datetime="{{ item.start_date  }}">{{ item.start_date  }}</time>
+{% endif %}
+
+{% if item.end_date %}
+{% if item.end_date == "Present" %}
+  <span class="postlist-date" >Present</span>
+{% else %}
+ <time class="postlist-date" datetime="{{ item.end_date  }}">{{ item.end_date  }}</time>
+{% endif %}
+{% endif %}

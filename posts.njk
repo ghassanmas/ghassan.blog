@@ -1,0 +1,13 @@
+---
+layout: layouts/home.njk
+permalink: /posts/
+eleventyNavigation:
+  key: Posts
+  order: 2
+footer: skip
+---
+
+<h1>Posts</h1>
+
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}

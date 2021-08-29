@@ -1,0 +1,22 @@
+{
+    "title": "Ghassan's Blog and Portfolio",
+    "url": "https://ghassan.blog/",
+    "language": "en",
+    "description": "Ghassan Maslamani's blog is, to learn about him, to pass time, or to learn random stuff",
+    "img": "https://ghassan.blog/img/default1.png",
+    "feed": {
+        "subtitle": "Ghassan Maslamani's blog is, to learn about him, to pass time, or to learn random stuff",
+        "filename": "feed.xml",
+        "path": "/feed/feed.xml",
+        "id": "https://ghassan.blog/"
+    },
+    "jsonfeed": {
+        "path": "/feed/feed.json",
+        "url": "https://ghassan.blog/feed/feed.json"
+    },
+    "author": {
+        "name": "Ghassan Maslamani",
+        "email": "ghassan.maslamani@gmail.com",
+        "url": "https://ghassan.blog/"
+    }
+}
