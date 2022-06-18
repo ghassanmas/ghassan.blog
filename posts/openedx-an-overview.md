@@ -8,6 +8,8 @@ tags:
 layout: layouts/post.njk
 ---
 
+**Last Updated:** 18 June 2022
+
 What is Open edX, Open edX is an E-learning platform, its what powers edx.org, it was built 2012 [^1].
 [^1]: May be before that, but that at least the earlist [commit](https://github.com/openedx/edx-platform/commit/cc1de22e2621c7fa1199750cf13ba57c937b9d98) you could go back in history with 
 
@@ -171,6 +173,23 @@ A total of 528 commiters (whom are 60.620% of total commiters) did 1673  commits
 
 I am not really satisfied with that, given only 10% commiters did 70% of commits.
 This will tell us why the project is heavily influenced by edx.org, I bet most of commiters in top group are affiliated with edx.org. 
+
+#### Update:
+
+_Start of update_
+
+When I shared this blog with the Open edX community, I recevied a note from one of long time contributor [David Ormsbee](https://github.com/ormsbee):
+
+> But if you’re treating all commits as equal and want to measure who is doing what in the code, you might want to limit the time range to after 2015 or so
+> -- <cite> David Rmsbee @ https://discuss.openedx.org/t/blog-a-brief-history-of-the-open-edx/7358/2 <cite>
+
+So following David, advice I have recreated the bar graph starting from 2016 and the result was different as he has expected.
+
+![edx-platform commits distribution from 2016](/img/commits_from_2016.png "edx-platform commits distribution from 2016")
+
+As you can note, in the second graph the distrubution of commits between the first two group are almost equal. This according to David has to do with the change of the  commit policy, since initally commiters didn't squash their commits. Add to that also initally edX used the main project repo for marketing site content. Which would defeinily have a larger share of commits. You could refer to the cite link above for more context.
+
+_End of update_
 
 But lets the see how these bars came out to be this way overtime, i.e. how did come up with that from 2012 to now. 
 Recall for generating the `git shortlog -sn --no-merges >> commiters.txt`, lets repeat that but with adding a filter for date, e.g for to get all commiters by 2012:
