@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title or metadata.title }}</title>
+    <link rel="canonical" href="https://ghassan.blog{{ page.url }}">
     <meta name="description" content="{{ description or metadata.description }}">
     <meta name="twitter:image" content="{{ img or metadata.img | url }}" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -44,10 +45,10 @@
 
 
 
-    <footer {% if  page.url in ['/'] or footer == 'skip'  %} class="below"  {% endif %}>
+    <footer {% if footer == 'skip'  %} class="below"  {% endif %}>
 
   <span>
-    © <time datetime="2022-05-07 09:38:36 +0000">2022</time> Ghassan Maslamani. Made with 11ty using the <a href="https://github.com/11ty/eleventy-base-blog/">base-blog</a> starter project. <a href='/privacy'> Privacy Policy,</a> <a href='/feed/feed.xml'> RSS Feed</a> Source: <a href='https://github.com/ghassanmas/ghassan.blog'> ghassan.blog </a>
+    © <time datetime="2022-09-07 09:53:36 +0000">2022</time> Ghassan Maslamani. Made with 11ty using the <a href="https://github.com/11ty/eleventy-base-blog/">base-blog</a> starter project. <a href='/privacy/'> Privacy Policy,</a> <a href='/feed/feed.xml'> RSS Feed</a> Source: <a href='https://github.com/ghassanmas/ghassan.blog'> ghassan.blog </a>
   </span>
 
     </footer>

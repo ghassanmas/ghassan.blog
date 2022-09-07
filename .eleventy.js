@@ -101,6 +101,12 @@ module.exports = function(eleventyConfig) {
         ghostMode: false
     });
 
+    eleventyConfig.addCollection("pinnedPosts",function(collectionApi){
+       return collectionApi.getFilteredByTags("posts").filter(function(item,index){
+            return item.data.pinned && index < 3; // We only show post if its pinned and is not one of the first 3 posts
+        })
+    });
+
     eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
 

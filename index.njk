@@ -8,7 +8,12 @@ eleventyNavigation:
 <p>
 Hello  I am <span class="focus">Ghassan Maslamani</span>, a software engineer with 5+ years of experience.
 </p>
+<hr/>
 
+<h1> Pinned Posts </h1>
+{% set postslist = collections.pinnedPosts %}
+{% include "postslist.njk" %}
+<hr/>
 {% set maxPosts = collections.posts.length | min(3) %}
 <h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
 
@@ -17,5 +22,6 @@ Hello  I am <span class="focus">Ghassan Maslamani</span>, a software engineer wi
 {% include "postslist.njk" %}
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the posts</a>.</p>
+<hr/>
 
 {% include "contact.njk" %}
