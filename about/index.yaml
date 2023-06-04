@@ -11,6 +11,10 @@ sections:
           I am motivated to contribute for believes of the open source initiatives in general as well 
           as well for believing in a world where education is freely accessible for the general public.
         summary:
+          - name: Two awards at Open edX conference 2023
+            description: I had the honor to be awarded two Awards at Open edX 2023 conference which was, held at MIT.
+            link: https://www.youtube.com/watch?v=uzCbTrWZnow
+            techs: [docker, i18n, caddy]
           - name: Bug Fixing
             description: fixed varied amount of bugs
             link: https://github.com/pulls?q=is%3Apr+author%3Aghassanmas+org%3Aopenedx+
@@ -44,7 +48,7 @@ sections:
             link: https://Madrasafree.com
             description: Upgraded an Open edX server with ~100K users 4 versions as well doing customization and extending of the platform.
             techs: [AWS, DevOps, Django, MySQL, MongoDB ,React, Docker/Docker-compose]
-      - name: Fullstack Developer @ Gazaskygeeks/FAC
+      - name: Fullstack Developer @ Gazaskygeeks/Founder&Coders
         start_date: 2017-05
         end_date: 2020-01
         details: |
@@ -72,7 +76,7 @@ sections:
             link: https://Zaat.to/DevOps
             techs: [DevOps, nginx, AWS, NodeJS]
           - name: Machine Learning
-            description: I wrote an article to explain the difference between
+            description: I wrote an article about machine learning concepts, where I used how humans as metaphor of explaining it.
             link: https://Zaat.to/Ml
             techs: [Machine Learning, Deep Learning, Transfer Learning]
           - name: Ghassan.blog
@@ -99,8 +103,8 @@ sections:
             description: Aata Compliance and privacy laws in the US
             link: https://Zaat.to/DevOps
             techs: [DevOps, nginx, AWS, NodeJS]
-          - name: Machine Learning
-            description: I wrote an article to explain the difference between
+          - name: Summary of AWS training course in Arabic
+            description: I talked about the basics of AWS services, I made this seesion, just after I passed AWS cloud practitioner exam.
             link: https://Zaat.to/Ml
             techs: [machine learning, data analytics]
 

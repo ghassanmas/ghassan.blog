@@ -3,5 +3,6 @@ node_modules/
 .DS_Sotre
 .DS_Store
 .firebase
+.vscode
 _not-yet
 
