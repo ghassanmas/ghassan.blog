@@ -20,6 +20,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(pluginSyntaxHighlight);
     eleventyConfig.addPlugin(pluginNavigation);
 
+
     // Alias `layout: post` to `layout: layouts/post.njk`
     eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
@@ -84,23 +85,21 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setLibrary("md", markdownLibrary);
 
     // Override Browsersync defaults (used only with --serve)
-    eleventyConfig.setBrowserSyncConfig({
-        callbacks: {
-            ready: function(err, browserSync) {
-                const content_404 = fs.readFileSync('_site/404.html');
-
-                browserSync.addMiddleware("*", (req, res) => {
-                    // Provides the 404 content without redirect.
-                    res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
-                    res.write(content_404);
-                    res.end();
-                });
-            },
-        },
+    // User the new browser server
+    eleventyConfig.setServerOptions({
+        module: "@11ty/eleventy-server-browsersync",
+    
+        // Default Browsersync options shown:
+        port: 8080,
+        open: false,
+        notify: false,
         ui: false,
-        ghostMode: false
-    });
-
+        ghostMode: false,
+    
+        // Opt-out of the Browsersync snippet
+        // snippet: false,
+      })
+    
     eleventyConfig.addCollection("pinnedPosts",function(collectionApi){
        return collectionApi.getFilteredByTags("posts").filter(function(item,index){
             return item.data.pinned && index < 3; // We only show post if its pinned and is not one of the first 3 posts
