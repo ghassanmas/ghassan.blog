@@ -1,4 +1,4 @@
-[---
+---
 title: Code and Law
 description: How law and code are similar to each other. 
 date: 2022-05-29
