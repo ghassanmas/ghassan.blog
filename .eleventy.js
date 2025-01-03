@@ -84,19 +84,15 @@ module.exports = function(eleventyConfig) {
         .use(require('markdown-it-mark'));
     eleventyConfig.setLibrary("md", markdownLibrary);
 
-    // Override Browsersync defaults (used only with --serve)
-    // User the new browser server
     eleventyConfig.setServerOptions({
-        module: "@11ty/eleventy-server-browsersync",
     
-        // Default Browsersync options shown:
         port: 8080,
         open: false,
         notify: false,
         ui: false,
         ghostMode: false,
     
-        // Opt-out of the Browsersync snippet
+        // Opt-out of the DevServer snippet
         // snippet: false,
       })
     
