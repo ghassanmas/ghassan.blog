@@ -1,0 +1,29 @@
+collections_config:
+  pages:
+    path: ''
+    name: Pages
+    icon: wysiwyg
+  about:
+    path: about
+    name: About
+    icon: bolt
+  posts:
+    path: posts
+    name: Posts
+    icon: event_available
+  data:
+    path: _data
+    name: Data
+    icon: data_usage
+    disable_url: true
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+paths:
+  static: ''
+  uploads: uploads
+timezone: Asia/Hebron
+markdown:
+  engine: commonmark
+  options:
+    html: true
