@@ -2,6 +2,7 @@
     "title": "Ghassan Maslamani Blog and Portfolio",
     "url": "https://ghassan.blog/",
     "language": "en",
+    "gitRepo":"https://github.com/ghassanmas/ghassan.blog",
     "description": "Ghassan Maslamani's blog is, to learn about him, to pass time, or to learn random stuff",
     "img": "https://ghassan.blog/img/default1.png",
     "feed": {

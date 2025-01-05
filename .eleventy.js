@@ -23,8 +23,8 @@ module.exports = function(eleventyConfig) {
 
     // Alias `layout: post` to `layout: layouts/post.njk`
     eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-
     eleventyConfig.addFilter("readableDate", dateObj => {
+
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy");
     });
 
@@ -32,6 +32,11 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('htmlDateString', (dateObj) => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
+
+    eleventyConfig.addAsyncFilter('getFileLastMoified',   function(path){
+        const stats  = fs.statSync(path);
+             return new Date(stats.mtime)
+    })
 
     // Get the first `n` elements of a collection.
     eleventyConfig.addFilter("head", (array, n) => {

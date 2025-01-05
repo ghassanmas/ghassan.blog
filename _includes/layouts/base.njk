@@ -43,13 +43,10 @@
       {{ content | safe }}
     </main>
 
-
-
     <footer {% if footer == 'skip'  %} class="below"  {% endif %}>
-
-  <span>
-    © <time datetime="2022-09-07 09:53:36 +0000">2022</time> Ghassan Maslamani. Made with 11ty using the <a href="https://github.com/11ty/eleventy-base-blog/">base-blog</a> starter project. <a href='/privacy/'> Privacy Policy,</a> <a href='/feed/feed.xml'> RSS Feed</a> Source: <a href='https://github.com/ghassanmas/ghassan.blog'> ghassan.blog </a>
-  </span>
+  <p> © <time datetime="{{ buildInfo.buildTime | htmlDateString }}">2025</time> Ghassan Maslamani. Made with 11ty using the <a href="https://github.com/11ty/eleventy-base-blog/">base-blog</a> starter project. <a href='/privacy/'> Privacy Policy,</a> <a href='/feed/feed.xml'> RSS Feed</a> </p>
+  <p>Git Source: <a href={{ metadata.gitRepo }}> ghassan.blog</a> commit hash: <a  href={{ metadata.gitRepo }}/commit/{{ buildInfo.hash }}>{{ buildInfo.hash }}</a>, <span>Site built on: </span><time datetime="{{ buildInfo.buildTime | htmlDateString }}">{{ buildInfo.buildTime | readableDate }}</time></p>
+<p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
     </footer>
 

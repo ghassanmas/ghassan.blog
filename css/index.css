@@ -468,6 +468,8 @@ footer {
     margin-bottom: 10px;
     margin-top: 10px;
     padding-left: 10px;
+    border-top: 1.5px solid black;
+
 }
 
 .contact_list {
@@ -575,8 +577,17 @@ img {
     font-style: italic;
     font-weight: 700;
 }
+.post_head{
+    font-size: small;
+    font-weight: 400;
+    border-bottom: 1.5px solid black;
+
+}
 
 @media (min-width:481px) {
+    .post_head{
+        max-width: 37rem;
+    }
     .below {
         position: fixed;
         bottom: 0;
@@ -588,7 +599,7 @@ img {
         margin: auto;
         margin-bottom: 10px;
     }
-    p,
+   main p,
     .tmpl-post li,
     img,
     code,
