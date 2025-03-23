@@ -1,4 +1,33 @@
+  /* ==========================================================================
+     Todo: 
+     - This choas; need to be refactored and cleaned up
+        - The dark theme is mostly based;  on https://github.com/11ty/eleventy-base-blog/commit/44dbdc7c801b1262a1e52147a0553f6c24d0382e 
+     ========================================================================== */
+
+
 /* Colors */
+
+
+:root {
+    --lightgray: #e0e0e0;
+    --gray: #C0C0C0;
+    --darkgray: #333;
+    --navy: #17050F;
+    --blue: #082840;
+    --white: #fff;
+    --black: #121212;
+    --darkmode-text: #e0e0e0;
+    --darkmode-bg: #121212;
+    --darkmode-highlight: #444;
+    --darkmode-border: #555;
+    --color-note: #0969da;
+    --color-tip: #1a7f37;
+    --color-warning: #9a6700;
+    --color-severe: #bc4c00;
+    --color-caution: #d1242f;
+    --color-important: #8250df;
+    --code-background: #f8f8f8;
+}
 
  :root {
     --lightgray: #e0e0e0;
@@ -7,7 +36,30 @@
     --navy: #17050F;
     --blue: #082840;
     --white: #fff;
+    --color-note: #0969da;
+    --color-tip: #1a7f37;
+    --color-warning: #9a6700;
+    --color-severe: #bc4c00;
+    --color-caution: #d1242f;
+    --color-important: #8250df;
+  
 }
+@media (prefers-color-scheme: dark) {
+    :root {
+      --color-note: #2f81f7;
+      --color-tip: #3fb950;
+      --color-warning: #d29922;
+      --color-severe: #db6d28;
+      --color-caution: #f85149;
+      --color-important: #a371f7;
+      --white: #121212;
+      --darkgray: #e0e0e0;
+      --color-hyber: #bb86fc;
+      --blue: #bb86fc;
+      --grey: var(--blue);
+    }
+  }
+
 
 
 /* Global stylesheet */
@@ -25,6 +77,19 @@ body {
     background-color: var(--white);
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode a[href] {
+    color: #bb86fc;
+}
+
+body.dark-mode .italic_bold_me {
+    color: #e0e0e0;
+}
+
 p:last-child {
     margin-bottom: 0;
 }
@@ -39,7 +104,7 @@ a[href] {
 }
 
 a[href]:visited {
-    color: var(--navy);
+    color: var(--blue);
 }
 
 main {
@@ -97,7 +162,7 @@ pre {
     hyphens: none;
     padding: 1em;
     margin: .5em 0;
-    background-color: #f6f6f6;
+    background-color: var(--code-background);
 }
 
 code {
@@ -428,6 +493,12 @@ h4 {
     /* background-image: url('/img/icons8-external-link.svg'); */
     width: 24px;
 }
+.external_blog{
+    font-size: 1.2rem;
+    font-weight: 330;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 .summary_item_header {
     display: inline;
@@ -468,7 +539,7 @@ footer {
     margin-bottom: 10px;
     margin-top: 10px;
     padding-left: 10px;
-    border-top: 1.5px solid black;
+    border-top: 1.5px solid var(--darkgray)
 
 }
 
@@ -580,7 +651,7 @@ img {
 .post_head{
     font-size: small;
     font-weight: 400;
-    border-bottom: 1.5px solid black;
+    border-bottom: 1.5px solid var(--darkgray)
 
 }
 
@@ -628,3 +699,208 @@ img {
         font-weight: 330;
     }
 }
+
+/* Dark Mode Support */
+body.dark-mode {
+    background-color: var(--darkmode-bg);
+    color: var(--darkmode-text);
+}
+
+ a[href] {
+    color: var(--color-hyber);
+}
+
+body.dark-mode pre {
+    background-color: var(--darkmode-highlight);
+}
+
+body.dark-mode .section_title,
+body.dark-mode .postlist-date,
+body.dark-mode .postlist-item:before {
+    color: var(--gray);
+}
+
+body.dark-mode .post-tag {
+    color: var(--lightgray);
+    border-color: var(--darkmode-border);
+}
+
+body.dark-mode .markdown-alert {
+    border-left-color: var(--gray);
+}
+
+body.dark-mode .markdown-alert-note {
+    border-left-color: var(--color-note);
+}
+
+body.dark-mode .markdown-alert-important {
+    border-left-color: var(--color-important);
+}
+
+body.dark-mode .markdown-alert-warning {
+    border-left-color: var(--color-warning);
+}
+
+body.dark-mode .markdown-alert-tip {
+    border-left-color: var(--color-tip);
+}
+
+body.dark-mode .markdown-alert-caution {
+    border-left-color: var(--color-caution);
+}
+
+/* Blockquote Fix for Dark Mode */
+blockquote {
+    background: #f9f9f9;
+    border-left: 5px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.75em 15px;
+    font-style: italic;
+    color: #333;
+    border-radius: 4px;
+}
+
+body.dark-mode blockquote {
+    background: var(--darkmode-blockquote);
+    border-left-color: var(--darkmode-blockquote-border);
+    color: var(--darkmode-text);
+}
+.markdown-alert {
+    padding: 0.5rem 1rem;
+    margin-bottom: 16px;
+    color: inherit;
+    border-left: .25em solid #888;
+  }
+  
+  .markdown-alert>:first-child {
+    margin-top: 0
+  }
+  
+  .markdown-alert>:last-child {
+    margin-bottom: 0
+  }
+  
+  .markdown-alert .markdown-alert-title {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    line-height: 1
+  }
+  
+  .markdown-alert .markdown-alert-title .octicon {
+    margin-right: 0.5rem;
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor;
+  }
+  
+  .markdown-alert.markdown-alert-note {
+    border-left-color: var(--color-note);
+  }
+  
+  .markdown-alert.markdown-alert-note .markdown-alert-title {
+    color: var(--color-note);
+  }
+  
+  .markdown-alert.markdown-alert-important {
+    border-left-color: var(--color-important);
+  }
+  
+  .markdown-alert.markdown-alert-important .markdown-alert-title {
+    color: var(--color-important);
+  }
+  
+  .markdown-alert.markdown-alert-warning {
+    border-left-color: var(--color-warning);
+  }
+  
+  .markdown-alert.markdown-alert-warning .markdown-alert-title {
+    color: var(--color-warning);
+  }
+  
+  .markdown-alert.markdown-alert-tip {
+    border-left-color: var(--color-tip);
+  }
+  
+  .markdown-alert.markdown-alert-tip .markdown-alert-title {
+    color: var(--color-tip);
+  }
+  
+  .markdown-alert.markdown-alert-caution {
+    border-left-color: var(--color-caution);
+  }
+  
+  .markdown-alert.markdown-alert-caution .markdown-alert-title {
+    color: var(--color-caution);
+  }
+  
+  .markdown-alert {
+    padding: 0.5rem 1rem;
+    margin-bottom: 16px;
+    color: inherit;
+    border-left: .25em solid #888;
+  }
+  
+  .markdown-alert>:first-child {
+    margin-top: 0
+  }
+  
+  .markdown-alert>:last-child {
+    margin-bottom: 0
+  }
+  
+  .markdown-alert .markdown-alert-title {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    line-height: 1
+  }
+  
+  .markdown-alert .markdown-alert-title .octicon {
+    margin-right: 0.5rem;
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor;
+  }
+  
+  .markdown-alert.markdown-alert-note {
+    border-left-color: var(--color-note);
+  }
+  
+  .markdown-alert.markdown-alert-note .markdown-alert-title {
+    color: var(--color-note);
+  }
+  
+  .markdown-alert.markdown-alert-important {
+    border-left-color: var(--color-important);
+  }
+  
+  .markdown-alert.markdown-alert-important .markdown-alert-title {
+    color: var(--color-important);
+  }
+  
+  .markdown-alert.markdown-alert-warning {
+    border-left-color: var(--color-warning);
+  }
+  
+  .markdown-alert.markdown-alert-warning .markdown-alert-title {
+    color: var(--color-warning);
+  }
+  
+  .markdown-alert.markdown-alert-tip {
+    border-left-color: var(--color-tip);
+  }
+  
+  .markdown-alert.markdown-alert-tip .markdown-alert-title {
+    color: var(--color-tip);
+  }
+  
+  .markdown-alert.markdown-alert-caution {
+    border-left-color: var(--color-caution);
+  }
+  
+  .markdown-alert.markdown-alert-caution .markdown-alert-title {
+    color: var(--color-caution);
+  }
