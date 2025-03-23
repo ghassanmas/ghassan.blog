@@ -68,6 +68,19 @@
     box-sizing: border-box;
 }
 
+@media (prefers-color-scheme: dark) {
+    .icon {
+      stroke: white;
+    }
+  }
+  
+  /* Light mode */
+  @media (prefers-color-scheme: light) {
+    .icon {
+      stroke: black;
+    }
+  }
+  
 html,
 body {
     padding: 0;
@@ -490,9 +503,15 @@ h4 {
 }
 
 .link_external {
-    /* background-image: url('/img/icons8-external-link.svg'); */
     width: 24px;
 }
+.external_blog{
+    font-size: 1.2rem;
+    font-weight: 330;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .external_blog{
     font-size: 1.2rem;
     font-weight: 330;
