@@ -1,17 +1,6 @@
 sections:
   - name: Experience
     items:
-      - name: Senior Fullstack developer
-        start_date: 2023-08
-        end_date: Present
-        link: https://abstract-technology.de
-        details: |
-         Continue working on Open edX (MOOC software) as part of company, previously I was as a freelancer. Leading to exposure to much wide range of problems and requirements.
-        summary:
-         - name: SAML eduGAIN integration
-           description: Continued, and led development for integrating 6K SAML IdPs to connect with an Open edX instance 
-           link: https://abstract-technology.de/edugain-and-open-edx
-           techs: [SAML ,SSO, Django]
       - name: Open Source Contributor @ Open edX and more
         start_date: 2021-08
         end_date: Present
@@ -38,9 +27,20 @@ sections:
             description: Tutor is the official supported tool for DevOps of the Open edX platform
             link: https://github.com/pulls?q=is%3Apr+author%3Aghassanmas+org%3Aoverhangio
             techs: [Docker/Docker-Compose, AWS, DevOps, bash]
+      - name: Senior Fullstack developer @ Abstract Technology
+        start_date: 2023-08
+        end_date: 2025-05
+        link: https://abstract-technology.de
+        details: |
+         Continue working on Open edX (MOOC software) as part of company, previously I was as a freelancer. Leading to exposure to much wide range of problems and requirements.
+        summary:
+         - name: SAML eduGAIN integration
+           description: Continued, and led development for integrating 6K SAML IdPs to connect with an Open edX instance 
+           link: https://abstract-technology.de/edugain-and-open-edx
+           techs: [SAML ,SSO, Django]
       - name: Freelancing @ Zaat.dev
         start_date: 2020-03
-        end_date: Present
+        end_date: 2023-10
         link: https://zaat.dev
         details: |
           I started Zaatdev, as an agency to build that specialized in building high quality web apps.
