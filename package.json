@@ -1,7 +1,7 @@
 {
-    "name": "eleventy-base-blog",
+    "name": "Ghassan Maslamani Blog",
     "version": "6.0.0",
-    "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+    "description": "Ghassan Maslamani's personal blog built with Eleventy",
     "scripts": {
         "build": "eleventy",
         "watch": "eleventy --watch",
@@ -12,12 +12,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/11ty/eleventy-base-blog.git"
+        "url": "git://github.com/ghassanmas/ghassan.blog.git"
     },
     "author": {
-        "name": "Zach Leatherman",
-        "email": "zachleatherman@gmail.com",
-        "url": "https://zachleat.com/"
+        "name": "Ghassan Maslamani",
+        "email": "ghassan.maslamani@gmail.com",
+        "url": "https://ghassan.blog/"
     },
     "license": "MIT",
     "bugs": {
