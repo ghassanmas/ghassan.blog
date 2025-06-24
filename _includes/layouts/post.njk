@@ -5,8 +5,13 @@ templateClass: tmpl-post
 ---
 <h1>{{ title }}</h1>
 <div class="post_head">
+{% if page.url | isArabic %}
+<span>تم النشر في:</span><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate('ar') }}</time>,
+<span>اخر تعديل تم في:</span><time datetime="{{ page.inputPath | getFileLastMoified | htmlDateString }}">{{ page.inputPath | getFileLastMoified | readableDate('ar') }}</time>
+{% else %}
 <span>Published on: </span><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>,
 <span>Last updated on: </span><time datetime="{{ page.inputPath | getFileLastMoified | htmlDateString }}">{{ page.inputPath | getFileLastMoified | readableDate }}</time>
+{% endif %}
 {%- for tag in tags | filterTagList -%}
 {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
 <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
