@@ -23,9 +23,8 @@ module.exports = function(eleventyConfig) {
 
     // Alias `layout: post` to `layout: layouts/post.njk`
     eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-    eleventyConfig.addFilter("readableDate", dateObj => {
-
-        return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy");
+    eleventyConfig.addFilter("readableDate", (dateObj, lang = 'en') => {
+        return lang === 'en' ? DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy") : new Intl.DateTimeFormat(lang).format(DateTime.fromJSDate(dateObj, { zone: 'utc' }))
     });
 
     // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -37,6 +36,14 @@ module.exports = function(eleventyConfig) {
         const stats  = fs.statSync(path);
              return new Date(stats.mtime)
     })
+
+    eleventyConfig.addFilter("isFaraj",function(path)  {
+        return path.includes("faraj/");
+    });
+
+    eleventyConfig.addFilter("isArabic",function(path)  {
+        return path.includes("ar/");
+    });
 
     // Get the first `n` elements of a collection.
     eleventyConfig.addFilter("head", (array, n) => {
