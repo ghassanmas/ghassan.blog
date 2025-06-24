@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: A placeholder for Faraj project.
+eleventyNavigation:
+  key: Faraj Initiative
+  order: 3
+---
+
+<span> You shall be redirected shortly...</span>
+
+<br>
+<br>
+
+<span dir="rtl">جاري تحويلك... </span>
+
+<script>
+setTimeout(function(){
+if (window.navigator.language.startsWith('ar')){
+window.location.href = `{window.location.href}/ar`
+}else{
+window.location.href = `${window.location.href}/en`
+}},3000);
+</script>
