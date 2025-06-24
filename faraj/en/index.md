@@ -6,5 +6,4 @@ layout: layouts/post.njk
 
 ## About the initiative
 
-
 ًWork in progress, check back later...
