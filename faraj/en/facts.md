@@ -263,23 +263,14 @@ You have three main options to transfer data from offline device to online devic
 
 The don'ts:
 
-- Don't use bluetooth, Wi-Fi, or an[^2]y wireless communication.
+- Don't use bluetooth, Wi-Fi, or any wireless communication[^2].
 
 ### Online to offline guide
 
 ## Refs
 
-- https://blog.cryptographyengineering.com/2024/08/25/telegram-is-not-really-an-encrypted-messaging-app/
-
-```
-
-```
-
-[^1]: ![extranl link](/img/icons8-external-link.svg){.external_blog} List of _publicly known_ private companies which their whole business is to build software to 
-  people:🔗 [https://xorl.wordpress.com](https://xorl.wordpress.com/offensive-security-private-companies-inventory/){target=_blank}.
-  sefrservgser
-  serfgser
-    
+[^1]: List of _publicly known_ private companies which their whole business is to build software to people: [https://xorl.wordpress.com](https://xorl.wordpress.com/offensive-security-private-companies-inventory/).
 [^2]: https://stackoverflow.com/questions/316068/what-is-the-ideal-font-for-ocr
-
 [^3]: https://github.com/ggerganov/ggwave
+
+- https://blog.cryptographyengineering.com/2024/08/25/telegram-is-not-really-an-encrypted-messaging-app/
