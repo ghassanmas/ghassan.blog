@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+title: Glossary
+---
+
+<h1> {{title}} </h1>
+
+{% set postslist = collections.glossaryEn %}
+{% include "glossarylist.njk" %}

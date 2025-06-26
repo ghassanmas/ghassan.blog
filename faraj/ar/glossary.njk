@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+title: مرجع مصطلحات
+---
+
+<h1> {{title}} </h1>
+
+{% set postslist = collections.glossaryAr %}
+{% include "glossarylist.njk" %}
