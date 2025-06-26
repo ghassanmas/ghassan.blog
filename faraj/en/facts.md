@@ -269,7 +269,7 @@ The don'ts:
 
 ## Refs
 
-[^1]: List of _publicly known_ private companies which their whole business is to build software to people: [https://xorl.wordpress.com](https://xorl.wordpress.com/offensive-security-private-companies-inventory/).
+[^1]: List of _publicly known_ private companies which their whole business is to build software to spy people: [https://xorl.wordpress.com](https://xorl.wordpress.com/offensive-security-private-companies-inventory/).
 [^2]: https://stackoverflow.com/questions/316068/what-is-the-ideal-font-for-ocr
 [^3]: https://github.com/ggerganov/ggwave
 
