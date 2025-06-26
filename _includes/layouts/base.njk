@@ -54,7 +54,7 @@
     </footer>
 
   {% else %}
-    <footer {% if footer == 'skip'  %} class="below"  {% endif %}>
+    <footer {% if footer == 'skip'  %} class=""  {% endif %}>
   <p> © <time datetime="{{ buildInfo.buildTime | htmlDateString }}">2025</time> Ghassan Maslamani. Made with 11ty using the <a href="https://github.com/11ty/eleventy-base-blog/">base-blog</a> starter project. <a href='/privacy/'> Privacy Policy,</a> <a href='/feed/feed.xml'> RSS Feed</a> </p>
   <p>Git Source: <a href={{ metadata.gitRepo }}> ghassan.blog</a> commit hash: <a  href={{ metadata.gitRepo }}/commit/{{ buildInfo.hash }}>{{ buildInfo.hash }}</a>, <span>Site built on: </span><time datetime="{{ buildInfo.buildTime | htmlDateString }}">{{ buildInfo.buildTime | readableDate }}</time></p>
 {% if page.url | isFaraj %}
