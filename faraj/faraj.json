@@ -1,3 +1,5 @@
 {
-    "date": "Created"
+    "date": "Created",
+    "layout":"layouts/post.njk"
+
 }
