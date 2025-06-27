@@ -8,4 +8,4 @@ It uses [Eleventy](https://github.com/11ty/eleventy), and particularly bootsrapp
 
 All code of this project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-All content of this project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/), **except content inside `farj`** folder which is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+All content of this project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/), **except content inside `faraj`** folder which is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
