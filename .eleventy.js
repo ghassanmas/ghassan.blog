@@ -5,8 +5,9 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const markdownItAttrs = require('markdown-it-attrs');
 const yaml = require("js-yaml");
+const {alert}  = require("@mdit/plugin-alert");
+
 
 module.exports = function(eleventyConfig) {
     // Copy the `img` and `css` folders to the output
@@ -91,9 +92,10 @@ module.exports = function(eleventyConfig) {
                 level: [1, 2, 3, 4],
             }),
             slugify: eleventyConfig.getFilter("slug")
-        }).use(markdownItAttrs)
+        })
         .use(require('markdown-it-footnote'))
-        .use(require('markdown-it-mark'));
+        .use(require('markdown-it-mark'))
+        .use(alert);
     eleventyConfig.setLibrary("md", markdownLibrary);
 
     eleventyConfig.setServerOptions({

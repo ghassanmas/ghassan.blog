@@ -3,10 +3,10 @@
     "version": "6.0.0",
     "description": "Ghassan Maslamani's personal blog built with Eleventy",
     "scripts": {
-        "build": "eleventy",
+        "build": "node --experimental-require-module node_modules/@11ty/eleventy/cmd.cjs",
         "watch": "eleventy --watch",
         "serve": "eleventy --serve",
-        "start": "eleventy --serve",
+        "start": "node --experimental-require-module node_modules/@11ty/eleventy/cmd.cjs --serve",
         "debug": "DEBUG=* eleventy",
         "deploy": "rm -rf _site && npm run build && firebase deploy"
     },
@@ -29,13 +29,13 @@
         "@11ty/eleventy-navigation": "^0.3.2",
         "@11ty/eleventy-plugin-rss": "^1.1.2",
         "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.3",
+        "@mdit/plugin-alert": "^0.22.1",
         "luxon": "^2.3.0",
-        "markdown-it": "^12.3.2",
+        "markdown-it": "^14.1.0",
         "markdown-it-anchor": "^8.4.1"
     },
     "dependencies": {
         "js-yaml": "^4.1.0",
-        "markdown-it-attrs": "^4.1.3",
         "markdown-it-footnote": "^3.0.3",
         "markdown-it-mark": "^3.0.1"
     }
