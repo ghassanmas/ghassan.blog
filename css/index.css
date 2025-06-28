@@ -770,6 +770,7 @@ body.dark-mode .markdown-alert-caution {
     border-left-color: var(--color-caution);
 }
 
+
 /* Blockquote Fix for Dark Mode */
 blockquote {
     background: #f9f9f9;
@@ -792,6 +793,11 @@ body.dark-mode blockquote {
     color: inherit;
     border-left: .25em solid #888;
   }
+  [dir="rtl"] .markdown-alert{
+    border-right: .25em solid #888;
+    border-left: unset;
+
+  }
   
   .markdown-alert>:first-child {
     margin-top: 0
@@ -805,7 +811,7 @@ body.dark-mode blockquote {
     display: flex;
     font-weight: 500;
     align-items: center;
-    line-height: 1
+    line-height: 1;
   }
   
   .markdown-alert .markdown-alert-title .octicon {
@@ -851,6 +857,12 @@ body.dark-mode blockquote {
   .markdown-alert.markdown-alert-caution {
     border-left-color: var(--color-caution);
   }
+   [dir="rtl"] .markdown-alert.markdown-alert-caution {
+        border-left-color: unset;
+
+    border-right-color: var(--color-caution);
+  }
+
   
   .markdown-alert.markdown-alert-caution .markdown-alert-title {
     color: var(--color-caution);
@@ -921,7 +933,18 @@ body.dark-mode blockquote {
   .markdown-alert.markdown-alert-caution {
     border-left-color: var(--color-caution);
   }
+
+    [dir="rtl"]  .markdown-alert.markdown-alert-caution {
+    border-right-color: var(--color-caution);
+  }
+
+  [dir="rtl"] .markdown-alert.markdown-alert-caution {
+    border-right-color: var(--color-caution);
+}
+
   
   .markdown-alert.markdown-alert-caution .markdown-alert-title {
     color: var(--color-caution);
   }
+
+
