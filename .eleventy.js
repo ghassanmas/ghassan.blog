@@ -68,6 +68,11 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter("filterTagList", filterTagList)
 
+    eleventyConfig.addCollection("isThereAnyPinnedPost",function(collections){
+        // this is not working, but it's okay for the meantime
+        return (collections.getFilteredByTags("posts").filter(post=> (post.data.pinned === true)).length > 0)
+      })
+
     // Create an array of all tags
     eleventyConfig.addCollection("tagList", function(collection) {
         let tagSet = new Set();
@@ -109,9 +114,10 @@ module.exports = function(eleventyConfig) {
         // snippet: false,
       })
     
+    
     eleventyConfig.addCollection("pinnedPosts",function(collectionApi){
        return collectionApi.getFilteredByTags("posts").filter(function(item,index){
-            return item.data.pinned && index < 3; // We only show post if its pinned and is not one of the first 3 posts
+            return item.data.pinned && index < 7; // We only show post if its pinned and is not one of the first 7 posts
         })
     });
 
