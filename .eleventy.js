@@ -8,6 +8,8 @@ const markdownItAnchor = require("markdown-it-anchor");
 const yaml = require("js-yaml");
 const MarkdownItGitHubAlerts = require("markdown-it-github-alerts").default
 
+const DateGitLastUpdated = require("./node_modules/@11ty/eleventy/src/Util/DateGitLastUpdated.js").default
+
 module.exports = function(eleventyConfig) {
     // Copy the `img` and `css` folders to the output
     eleventyConfig.addPassthroughCopy("img");
@@ -32,9 +34,13 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
 
-    eleventyConfig.addAsyncFilter('getFileLastMoified',   function(path){
+    eleventyConfig.addAsyncFilter('getFileLastMoified',   async function(path){
+     const  lastMod = await  DateGitLastUpdated(path);
+     return lastMod;
+        /*
         const stats  = fs.statSync(path);
              return new Date(stats.mtime)
+    */
     })
 
     eleventyConfig.addFilter("isFaraj",function(path)  {
